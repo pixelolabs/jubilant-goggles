@@ -97,22 +97,5 @@ ssh.text.pub
 
 /web/**/.gitignore
 
-<<<<<<< HEAD
-=======
 
 # .lando.yml
-
-web/.csslintrc
-web/.eslintignore
-web/.eslintrc.json
-web/.ht.router.php
-web/.htaccess
-web/INSTALL.txt
-web/README.md
-web/autoload.php
-web/example.gitignore
-web/index.php
-web/robots.txt
-web/update.php
-web/web.config
->>>>>>> 22cb15d4 (removed vendor folder, added drush in patnheon.yml and updated webroot in panthoen.yml and lando.yml)
