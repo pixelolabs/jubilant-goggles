@@ -89,7 +89,7 @@ Thumbs.db
 
 node_modules
 package-lock.json
-# vendor/*
+vendor/*
 ssh.text
 ssh.text.pub
 # *settings.php
