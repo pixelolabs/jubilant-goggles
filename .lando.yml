@@ -1,0 +1,6 @@
+name: dukeoeso
+recipe: pantheon
+config:
+  framework: drupal8
+  site: dukeoeso
+  id: e243fbd5-7ff6-4a35-b7cf-90f75915c3ff
