@@ -231,7 +231,7 @@ textarea.input--error {
       ~ {
         .checkmark {
           border-color: transparent;
-          background-color: $color-light-green;
+          background-color: $color-green;
           &:after {
             display: block;
             border-color: $color-white;
@@ -335,7 +335,7 @@ textarea.input--error {
   position: relative;
 
   input.search {
-    background: $color-light-gray;
+    background: $color-light-black;
     border-radius: 20px;
     width: 300px;
     height: 40px;
@@ -345,7 +345,7 @@ textarea.input--error {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.75px;
-    color: $color-gray;
+    color: $color-black;
     font-family: $font-family-primary;
 
     &::placeholder {
@@ -353,7 +353,7 @@ textarea.input--error {
       font-size: 16px;
       line-height: 24px;
       letter-spacing: 0.75px;
-      color: $color-gray;
+      color: $color-black;
       font-family: $font-family-primary;
     }
   }
@@ -564,7 +564,7 @@ textarea.input--error {
     // border-radius: 50%;
 
     &.current {
-      background: $color-light-green;
+      background: $color-green;
       // color: $color-black;
     }
   }
@@ -618,7 +618,7 @@ textarea.input--error {
   line-height: normal;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background: $color-light-gray;
+  background: $color-light-black;
 
   &.sale {
     background: $color-black;
@@ -821,7 +821,7 @@ textarea.input--error {
       border: none !important;
       border-left: 1px solid $color-white !important;
       border-radius: 0 !important;
-      color: $color-light-green !important;
+      color: $color-green !important;
       text-transform: uppercase;
       font-size: 14px !important;
       font-weight: bold !important;

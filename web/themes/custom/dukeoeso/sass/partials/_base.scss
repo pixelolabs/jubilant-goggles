@@ -38,10 +38,10 @@ body {
   -ms-appearance: none;
   margin: 0;
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  background-color: $color-light-gray;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.28;
+
   overflow-x: hidden;
 }
 
@@ -95,28 +95,16 @@ li {
 }
 p {
   font-family: $font-family-primary;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.71;
+  font-size: 18x;
+  font-weight: normal;
+  line-height: 1.28;
   letter-spacing: normal;
-  &.large{
-    font-size: 16px;
-
-  line-height: 1.5;
-  }
-  a{
-    color: $color-green;
-    text-decoration: underline;
-  }
+  
 }
 
 
 
-b,
-strong {
-  font-weight: 600;
-  font-family: $font-family-primary;
-}
+
 
 a {
   font-family: $font-family-primary;
@@ -144,76 +132,54 @@ h6 {
 
 h1,
 .h1 {
-  font-size: 80px;
-font-weight: 500;
-line-height: 1;
-letter-spacing: -1px;
+  font-size: 56px;
+font-weight: 800;
+line-height: normal;
+letter-spacing: normal;
 text-transform:capitalize;
-@include MQ(MQ-980) {
-  font-size: 65px;
-}
-@include MQ(MQ-768) {
-  font-size: 50px;
-}
-@include MQ(MQ-480) {
-  font-size: 40px;
-  letter-spacing: -0.5px;
-}
+
 }
 
 h2,
 .h2 {
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: normal;
+  font-size: 32px;
   line-height: normal;
-  letter-spacing: -0.5px;
-  text-transform: capitalize;
-  @include MQ(MQ-480) {
-    line-height: 1;
-    font-size: 30px;
-    .mobile-40{
-      font-size: 30px;
-    }
-  }
+  letter-spacing:normal;
+
 
 }
 
 h3,
 .h3 {
-  font-weight: 500;
+  font-weight: normal;
   font-size: 30px;
-  line-height: normal;
-  letter-spacing: -0.5px;
-  text-transform: capitalize;
-  @include MQ(MQ-480) {
-    line-height: 1;
-  }
+  line-height: 1;
+  letter-spacing:normal;
+ 
 }
 
 h4,
 .h4 {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: -0.5px;
-  text-transform: capitalize;
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing:normal;
+  line-height: 1.33;
 }
 
 h5,
 .h5 {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: normal;
-  letter-spacing: -0.5px;
-  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  letter-spacing: normal;
 }
 
 h6 {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: normal;
-  letter-spacing: -0.5px;
-  text-transform: capitalize;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: normal;
 }
 
 /****** BUTTONS ******/
@@ -237,28 +203,15 @@ button {
 
 .btn--secondary {
   @include px-button;
-  background-color: $color-light-green;
-  border: 1px solid $color-light-green;
-  color: $color-black;
-}
-
-.btn--tertiary {
-  @include px-button;
-  border: solid 1px $color-black !important;
-  color: $color-black !important;
-  background-color: transparent;
-}
-
-.btn--tertiary-secondary {
-  @include px-button;
-  border-bottom: solid 2px $color-light-green !important;
-  color: $color-black !important;
-  background-color: transparent;
-  padding: 0 0 14px;
-  display: block;
-  
  
+  border: 2px solid $color-orange;
+  color: $color-white;
+  &::before{
+    background: $color-orange;
+  }
 }
+
+
 .link--primary {
   font-size: 12px;
   font-weight: bold;
@@ -291,9 +244,9 @@ button {
 /* FULL FORMAT */
 .full-format {
   font-family: $font-family-primary;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: normal;
 
   
 
@@ -303,14 +256,15 @@ button {
     padding-top: 30px;
   }
   a {
-      color: $color-green;
-      text-decoration: underline;
+     
+      font-weight: bold;
+      color: $color-blue2;
   }
 
   p{
     a{
-      color: $color-green;
-      text-decoration: underline;
+      font-weight: bold;
+      color: $color-blue2;
     }
   }
 
@@ -334,11 +288,11 @@ button {
 
     li {
       padding-left: 10px;
-      list-style-type: decimal;
-      font-size: 14px;
-      line-height: 1.71;
+      list-style-type: none;
+      font-size: 19px;
+      line-height:normal;
       letter-spacing: normal;
-      color: $color-black;
+      color:$color-light-black;
       margin-bottom: 0px;
 
       &:last-child {
@@ -348,7 +302,7 @@ button {
   }
 
   ul {
-    padding-left: 0px;
+   
 
     li {
       list-style: none;
@@ -356,10 +310,10 @@ button {
       position: relative;
 
       &::before {
-        width: 3px;
-        height: 3px;
+        width: 8px;
+        height: 8px;
         content: "";
-        background: $color-black;
+        background: $color-orange;
         position: absolute;
         left: 15px;
         top: 10px;
@@ -370,9 +324,24 @@ button {
 
   ol {
     li {
-      padding-left: 10px !important;
-      list-style-type: decimal !important;
+     
+      padding-left: 35px;
+      position: relative;
+      &::before {
+        position: relative;
+        content: counter(list-item)'.';
+        color: $color-orange;
+        position: absolute;
+        left: 10px;
+        top: 0px;
+        font-size: 19px;
+        font-weight: bold;
+        line-height: normal;
+        
+      }
+     
     }
+
   }
 
   ul,
@@ -382,6 +351,7 @@ button {
       padding-top: 0;
       margin-top: 0;
     }
+    
   }
 
   
@@ -420,6 +390,13 @@ button {
   padding: 0px;
 }
 
+
+.container-1920 {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
 
 .container-1440 {
   width: 100%;
