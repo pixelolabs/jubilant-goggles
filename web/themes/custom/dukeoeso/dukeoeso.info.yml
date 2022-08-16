@@ -4,7 +4,7 @@ type: theme
 core_version_requirement: ^8 || ^9
 libraries:
   - dukeoeso/global-styling
-base theme: false
+base theme: classy
 screenshot: fluffiness.png
 regions:
   header: 'Header'
